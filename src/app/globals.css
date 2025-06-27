@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -37,4 +38,66 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-text {
+  padding:  5px 20px 0px 0px; 
+}
+
+.hero-heading {
+  padding: 20px 20px 0px 0px;
+}
+
+.mpip {
+  padding: 20px 20px 0px 0px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, -6px);
+  }
+  50% {
+    transform: translate(-4px, 4px);
+  }
+  75% {
+    transform: translate(2px, -3px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+@keyframes borderGradient {
+  0% {
+    background: linear-gradient(60deg, #7c3aed, #0ff);
+  }
+  25% {
+    background: linear-gradient(60deg, #4f46e5, #5eead4);
+  }
+  50% {
+    background: linear-gradient(60deg, #0ff, #7c3aed);
+  }
+  75% {
+    background: linear-gradient(60deg, #5eead4, #4f46e5);
+  }
+  100% {
+    background: linear-gradient(60deg, #7c3aed, #0ff);
+  }
+}
+
+.bubble {
+  border: 3px solid ;
+  border-radius: 75px;
+  padding: 1rem 2rem;
+  border-color: rgb(236, 254, 254);
+  animation: borderGradient 3s linear infinite;
+  box-shadow: 0 10px 20px rgba(128, 0, 255, 0.2);
+  cursor: grab;
+}
 
