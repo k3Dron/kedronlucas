@@ -9,8 +9,8 @@ import { cn } from "@/components/utils"
 const navItems = [
   { name: "Hero", url: "#hero", icon: Home },
   { name: "About", url: "#about", icon: User },
-  { name: 'Gallary', url: '#gallary', icon: Image },
   { name: "Projects", url: "#projects", icon: FileText },
+  { name: 'Gallary', url: '#gallary', icon: Image },
   { name: "Social", url: "#social", icon: Share2 },
 ]
 

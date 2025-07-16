@@ -16,8 +16,18 @@ export default function HeroScene() {
           speed={0.5} 
           borderColor="#333"
           squareSize={40}
-        />        
-        <div className="flex-1 relative hidden md:block">
+        />
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+  <div className="bg-text text-orange-500 text-[14vw] md:text-[40vw] text-center leading-[1.1] whitespace-pre-line px-4 break-words">
+    <span className="block md:hidden">
+      Ho<br />ll<br />a!
+    </span>
+    <span className="hidden md:inline-block">
+      Holla!
+    </span>
+  </div>
+</div>
+        <div className="flex-1 relative">
           <SplineScene 
             scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
             className="w-full h-full"
