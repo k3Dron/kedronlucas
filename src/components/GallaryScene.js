@@ -14,7 +14,7 @@ const SLIDES = [
   {
     id: "slide-1",
     title: "Retrothon Hackathon",
-    description:"Won First Place at Retrothon Hackathon. Built The AutoAgent, a no-code/low-code platform that allows anyone to create, deploy, and monetize AI Agents using a drag-and-drop canvas—just like Canva, but for AI! The platform supports custom model integration, RAG workflows, and even has an AI chatbot that builds agents for non-tech users. Our team handled everything from flow logic, marketplace backend, and model hosting to UI and API access. Judges from top companies like SJ Innovations, Persistent Systems, and Qualitas recognized it as the top project. We’re now in talks with investors to launch it as a full-scale product!",
+    description:"Won First Place at Retrothon Hackathon. Built The AutoAgent, a no-code/low-code platform that allows anyone to create, deploy, and monetize AI Agents using a drag-and-drop canvas—just like Canva, but for AI! The platform supports custom model integration, RAG workflows, and even has an AI chatbot that builds agents for non-tech users. Our team handled everything from flow logic, marketplace backend, and model hosting to UI and API access. Judges from top companies like SJ Innovations, Persistent Systems, and Qualitas recognized it as the top project. We are now in talks with investors to launch it as a full-scale product!",
     imageUrl: "https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?q=80&w=2486&auto=format&fit=crop",
     date: "June 2024",
     linkedin: "https://www.linkedin.com/posts/kedron-lucas_ai-hackathon-retrothon-activity-7312070130383929344-VHRN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETdTr4Bbb0FNngGAWLvDxiWctGt6nQKXD4",
@@ -30,7 +30,7 @@ const SLIDES = [
   {
     id: "slide-3",
     title: "AI/ML Mentor",
-    description:"Last Friday, at InternSpirit’s mentorship program (for the first and third-year students), I had the opportunity to mentor in the AI/ML domain. After listening to other mentors from other domains share their tech wisdom, it was finally my turn. The auditorium felt like a cozy library—quiet, focused, and… very ready for a ...",
+    description:"Last Friday, at InternSpirit mentorship program (for the first and third-year students), I had the opportunity to mentor in the AI/ML domain. After listening to other mentors from other domains share their tech wisdom, it was finally my turn. The auditorium felt like a cozy library—quiet, focused, and… very ready for a ...",
     imageUrl: "https://images.unsplash.com/photo-1688733720228-4f7a18681c4f?q=80&w=2487&auto=format&fit=crop",
     date: "June 2024",
     linkedin: "https://www.linkedin.com/posts/kedron-lucas_ai-machinelearning-mentorshipmatters-activity-7291553633110740992-eO-3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETdTr4Bbb0FNngGAWLvDxiWctGt6nQKXD4",
@@ -54,7 +54,7 @@ const SLIDES = [
   {
     id: "slide-6",
     title: "MIT Hackathon",
-    description:"Excited to share that my team consisting of Chinmay Gadgil, SHAUN D'SOUZA, Kedron Lucas, Parshuram Gooli and I Harsh Sawant have been selected to participate in the 36-hour hackathon at ...",
+    description:"Excited to share that my team consisting of Chinmay Gadgil, Shaun Dsouza, Kedron Lucas, Parshuram Gooli and I Harsh Sawant have been selected to participate in the 36-hour hackathon at ...",
     imageUrl: "https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?q=80&w=2487&auto=format&fit=crop",
     date: "June 2024",
     linkedin: "https://www.linkedin.com/posts/kedron-lucas_hackathon-nitgoa-techtonics-activity-7261987720493715456-GvG-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETdTr4Bbb0FNngGAWLvDxiWctGt6nQKXD4",
@@ -62,7 +62,7 @@ const SLIDES = [
   {
     id: "slide-7",
     title: "Goa Polics Hackathon",
-    description:"Goa Police Hackathon just wrapped, and what a ride it’s been! From sleepless nights fueled by adrenaline to moments of breakthrough that made it all worth it, this journey tested our skills, teamwork, and endurance. We tackled challenges that matter, using tech, ML ...",
+    description:"Goa Police Hackathon just wrapped, and what a ride its been! From sleepless nights fueled by adrenaline to moments of breakthrough that made it all worth it, this journey tested our skills, teamwork, and endurance. We tackled challenges that matter, using tech, ML ...",
     imageUrl: "https://images.unsplash.com/photo-1726066012698-bb7a3abce786?q=80&w=2487&auto=format&fit=crop",
     date: "June 2024",
     linkedin: "https://www.linkedin.com/posts/kedron-lucas_innovation-techforgood-ml-activity-7246196597947039747-pTfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETdTr4Bbb0FNngGAWLvDxiWctGt6nQKXD4",
@@ -74,7 +74,7 @@ export default function HoverSliderDemo() {
     <div className="h-full w-full flex flex-col items-center gap-20">
     <div className="hero-heading text-4xl md:text-8xl bebas bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">🌀Memories down the line</div>
     <p className="font-sans font-normal text-center text-base mt-4 text-neutral-300 ">These are my Shinobi Scrolls — snapshots of the chaos, creativity, 
-      and ramen-fueled nights behind each jutsu I've learned! <br/>From shadowy sketches to full-blown design Rasengans, 
+      and ramen-fueled nights behind each jutsu Ive learned! <br/>From shadowy sketches to full-blown design Rasengans, 
       very frame holds a part of my journey. <br/>Believe it!</p>
     <HoverSlider className=" place-content-center 1tags text-white">
       <div className="flex flex-wrap items-center justify-evenly gap-6 md:gap-12">

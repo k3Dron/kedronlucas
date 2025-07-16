@@ -54,7 +54,7 @@ export default function ProjectScene() {
         {
           image: 'https://picsum.photos/id/28/367/267',
           name: 'TrustVote',
-          description: 'TrustVote is a prototype that enhances India’s Electronic Voting Machine (EVM) system by adding a blockchain-based trust layer. Built using Solidity and deployed on Remix IDE, it encrypts each vote and stores its hash on an immutable blockchain ledger—ensuring transparency, auditability, and decentralization.',
+          description: 'TrustVote is a prototype that enhances Indias Electronic Voting Machine (EVM) system by adding a blockchain-based trust layer. Built using Solidity and deployed on Remix IDE, it encrypts each vote and stores its hash on an immutable blockchain ledger—ensuring transparency, auditability, and decentralization.',
           tech: ['solidity', 'ether.js', 'Ethereum ', 'OpenZeppelin ', 'Metamask '],
           github: 'https://github.com/k3Dron/blockchain/blob/main/pro002/dEVM/DecentralizedVoting.sol',
           linkedin: 'https://www.linkedin.com/posts/kedron-lucas_codeuntilchristmas-codeuntilchristmas-codethehalls-activity-7275839101243678721-CAjE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5e1ZkBeqMRe_LyMKjEIzZLS1BBnoTGCS8',
@@ -62,7 +62,7 @@ export default function ProjectScene() {
         {
           image: 'https://picsum.photos/id/28/367/267',
           name: 'Peer-Hive',
-          description: 'Peer-Hive is THE platform where student associations, councils, and clubs can finally stop running around. It’s where you can share info, discuss plans, manage tasks, and actually keep track of what’s going on—all in one place. Basically, it’s like having that one super-organized friend, but now they’re working for you',
+          description: 'Peer-Hive is THE platform where student associations, councils, and clubs can finally stop running around. Its where you can share info, discuss plans, manage tasks, and actually keep track of whats going on—all in one place. Basically, its like having that one super-organized friend, but now theyre working for you',
           tech: ['AI', 'ML', 'python ', 'Next.js ', 'Tailwind CSS', 'MongoDB'],
           github: 'https://github.com/harshsawant2505/Peer-Hive',
           linkedin: 'https://www.linkedin.com/posts/kedron-lucas_chaosnomore-stopjugglingapps-headlesschickensnomore-activity-7266393490547187712-UNT9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5e1ZkBeqMRe_LyMKjEIzZLS1BBnoTGCS8'
@@ -136,7 +136,7 @@ export default function ProjectScene() {
     <div className="hero-heading text-4xl md:text-8xl bebas bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">🌀Missions Completed</div>
     <p className="font-sans font-normal text-center text-base mt-4 text-neutral-300 ">Every shinobi has their path, and these are mine. <br></br>
         From solo S-rank coding quests to crafting AI agents, each project here represents a step in my ninja journey. Every mission taught me a new jutsu.
-        <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check 'em out—Dattebayo!.</p>
+        <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check em out—Dattebayo!.</p>
     <TiltGalleryLoop items={projectList} />
     </div>
     )
