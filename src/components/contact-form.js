@@ -162,7 +162,7 @@ export default function ContactForm() {
               <div className="form-group message-group">
                 <textarea
                   name="message"
-                  placeholder={tab === "ask-date" ? "What would you like to say? 💕" : "What's on your mind?"}
+                  placeholder={tab === "ask-date" ? "What would you like to say? 💕" : "Whats on your mind?"}
                   value={form.message}
                   onChange={handleChange}
                   required
