@@ -18,9 +18,9 @@ export default function HeroScene() {
           squareSize={40}
         />
         <div className="absolute inset-0 z-0 flex items-center justify-center">
-  <div className="bg-text text-orange-500 text-[14vw] md:text-[40vw] text-center leading-[1.1] whitespace-pre-line px-4 break-words">
+  <div className="bg-text text-orange-500 text-[40vw] md:text-[40vw] text-center leading-[1.1] whitespace-pre-line px-4 break-words">
     <span className="block md:hidden">
-      Ho<br />ll<br />a!
+      Holla!
     </span>
     <span className="hidden md:inline-block">
       Holla!

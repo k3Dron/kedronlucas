@@ -93,9 +93,22 @@ export default function AnalogClock({ onTimeChange, selectedTime }) {
         </div>
       </div>
 
-      <div className="time-display">
-        {`${(time.hours === 0 ? 12 : time.hours).toString().padStart(2, "0")}:${time.minutes.toString().padStart(2, "0")}`}
-      </div>
+      <div className="time-display mt-2 flex flex-col items-center">
+  <input
+    type="time"
+    className="bg-transparent text-[#ff1493]  rounded px-2 py-1 text-sm text-center w-[100px]"
+    value={`${(time.hours === 0 ? 12 : time.hours).toString().padStart(2, "0")}:${time.minutes.toString().padStart(2, "0")}`}
+    onChange={(e) => {
+      const [newHoursStr, newMinutesStr] = e.target.value.split(":")
+      const newHours = Number(newHoursStr) % 12 + 3
+      const newMinutes = Number(newMinutesStr) + 15
+      const newTime = { hours: newHours, minutes: newMinutes }
+      setTime(newTime)
+      notifyTimeChange(newTime)
+    }}
+  />
+</div>
+
     </div>
   )
 }

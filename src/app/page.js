@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import  HeroScene  from "@/components/HeroScene"
 import LoaderOne from "@/components/loader-one";
 import ProjectScene from "@/components/ProjectScene";
-import AboutScene from "@/components/AboutScene2";
+import AboutScene from "@/components/AboutScene";
 import HoverSliderDemo from "@/components/GallaryScene";
 import Footer from "@/components/FooterScene";
 
@@ -30,53 +30,64 @@ export default function Home() {
   return (
     <>
       {showLoader && (
-        <div
-          className={`fixed inset-0 bg-black z-50 flex items-center justify-center transition-opacity duration-1000 ${
-            fadeOut ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          <span className="text-xl font-medium animate-pulse text-white">
-            <LoaderDemo />
-            <div className="h-10"></div>
-            Kedron is sleeping, waiting for him to wake up...
-          </span>
-        </div>
-      )}
+  <div
+    className={`fixed inset-0 bg-black z-50 flex items-center justify-center transition-opacity duration-1000 ${
+      fadeOut ? "opacity-0" : "opacity-100"
+    }`}
+  >
+    <span className="text-sm sm:text-base md:text-xl font-medium animate-pulse text-white text-center">
+      <LoaderDemo />
+      <div className="h-4 sm:h-6 md:h-10"></div>
+      Kedron is sleeping, waiting for him to wake up...
+    </span>
+  </div>
+)}
+
 
       <div className="scroll-smooth">
         <section
           id="hero"
-          className="pt-32 h-screen flex items-center justify-center text-white text-4xl font-bold"
+          className="pt-32 h-screen flex items-center justify-center text-white text-4xl font-bold "
         >
-        <HeroScene />
+          <div className="w-full h-full overflow-hidden">
+            <HeroScene />
+          </div>
         </section>
 
         <section
           id="about"
           className="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold"
-        > 
-        <AboutScene />           
+        >
+          <div className="w-full h-full ">
+            <AboutScene />
+          </div>
         </section>
 
         <section
           id="projects"
-          className="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold"
+          className="flex items-center justify-center bg-black text-white text-4xl font-bold"
         >
-          <ProjectScene/>         
+          <div className="w-full h-full ">
+            <ProjectScene />
+          </div>
         </section>
 
         <section
           id="gallary"
-          className="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold"
+          className="flex items-center justify-center bg-black text-white text-4xl font-bold"
         >
-          <HoverSliderDemo/>
+          <div className="w-full h-full">
+            <HoverSliderDemo />
+          </div>
         </section>
 
         <section
           id="social"
-          className="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold"
+          className="flex items-center justify-center bg-black text-white text-4xl font-bold "
         >
-          <Footer />
+          <div className="w-full h-full ">
+            <Footer />
+          </div>
         </section>
       </div>
     </>

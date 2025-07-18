@@ -25,12 +25,13 @@ const AboutScene = () => (
     <div className="flex flex-col items-center pt-24 pb-48">
       <ScrollVelocity
         texts={[
-          "Hi there, Welcome to my Portfolio!",
-          "Hope you enjoy the experience!",
+          "Hi there👋, Welcome to my Portfolio!",
+          "Hope you enjoy the experience!🤩",
         ]}
         velocity={20}
         className="custom-scroll-text"
       />
+      <div className="h-20 md:hidden"/>
       <ScrollFloat
         animationDuration={1}
         ease="back.inOut(2)"
@@ -40,6 +41,8 @@ const AboutScene = () => (
       >
         Kedron Lucas
       </ScrollFloat>
+      <p className="md:hidden font-sans font-normal text-center text-sm mt-4 text-neutral-300 pbutton">
+        AI and Software Engineer </p>
     </div>
 
     {/* Profile image slightly above bottom */}
@@ -47,7 +50,7 @@ const AboutScene = () => (
       <img
         src="/images/mainpfp.png"
         alt="Profile"
-        className="w-auto h-130 my-4"
+        className="w-auto h-100 md:h-130 my-4"
       />
     </div>
 

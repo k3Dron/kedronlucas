@@ -137,7 +137,7 @@ export const SlideDescription = forwardRef(
           <span className="bebas font-normal  mt-4 text-neutral-300 ">{date}</span>
         )}
 
-        <p className="font-sans font-normal text-base mt-4 text-neutral-300 max-w-100">{description}</p>
+        <p className="font-sans font-normal text-xs xl:text-base mt-4 text-neutral-300 max-w-100">{description}</p>
 
         {linkedin && (
           <a

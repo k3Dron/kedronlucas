@@ -112,7 +112,7 @@ export default function TiltGalleryLoop({ items = [] }) {
                                 className="group relative rounded-2xl flex flex-col gap-3"
                             >
                                 <div
-                                    className="rounded-2xl overflow-hidden"
+                                    className="rounded-2xl overflow-hidden "
                                     style={{
                                         height: '33vh',
                                         width: '33vh',

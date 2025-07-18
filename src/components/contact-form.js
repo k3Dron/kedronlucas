@@ -71,10 +71,10 @@ export default function ContactForm() {
   }
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com/yourhandle", label: "Instagram" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yourprofile", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-    { icon: Mail, href: "mailto:your@email.com", label: "Email" },
+    { icon: Instagram, href: "https://www.instagram.com/this_is_ked/", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/kedron-lucas/", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/k3Dron/k3Dron0.1", label: "GitHub" },
+    { icon: Mail, href: "mailto:kedronportfolio@gmail.com", label: "Email" },
   ]
 
   return (

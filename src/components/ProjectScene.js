@@ -1,5 +1,6 @@
 "use client"
 import  TiltGalleryLoop from '@/components/tiltGallaryLoop';
+import ScrollFloatHeader from './ScrollFloatHeader';
 
 export default function ProjectScene() {
 
@@ -131,12 +132,18 @@ export default function ProjectScene() {
     
 
     return (
-    <div className="h-full w-full flex flex-col items-center gap-10">
-    <div></div>
-    <div className="hero-heading text-4xl md:text-8xl bebas bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">🌀Missions Completed</div>
-    <p className="font-sans font-normal text-center text-base mt-4 text-neutral-300 ">Every shinobi has their path, and these are mine. <br></br>
+    <div className="h-full w-full flex flex-col items-center">
+    <ScrollFloatHeader animationDuration={1}
+        ease="back.inOut(2)"
+        scrollStart="center bottom+=50%"
+        scrollEnd="bottom bottom-=40%"
+        stagger={0.03}
+      >
+        Missions Done </ScrollFloatHeader>
+    <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton">Every shinobi has their path, and these are mine. <br></br>
         From solo S-rank coding quests to crafting AI agents, each project here represents a step in my ninja journey. Every mission taught me a new jutsu.
         <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check em out—Dattebayo!.</p>
+        <div className="h-4 md:h-10"/>
     <TiltGalleryLoop items={projectList} />
     </div>
     )

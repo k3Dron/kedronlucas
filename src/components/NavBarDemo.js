@@ -12,5 +12,5 @@ export function NavBarDemo() {
     { name: 'Social', url: '#social', icon: Share2 },
   ]
 
-  return <NavBar items={navItems} />
+  return <NavBar />
 }

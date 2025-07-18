@@ -1,6 +1,5 @@
 import './globals.css'
-import { NavBarDemo } from '@/components/NavBarDemo' 
-import SnakeGame from "@/components/SnakeGame";
+import { NavBar } from '@/components/ui/tubelight-navbar' 
 import { SplashCursor } from "@/components/ui/splash-cursor"
 
 export default function RootLayout({ children }) {
@@ -8,7 +7,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="scroll-smooth bg-white text-black">
         <SplashCursor />
-        <NavBarDemo />
+        <NavBar />
         <main>{children}</main>
       </body>
     </html>
