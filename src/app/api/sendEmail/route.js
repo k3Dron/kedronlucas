@@ -1,12 +1,10 @@
-
-// app/api/sendEmail/route.js
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
-    const { email, message } = await request.json();
+    const { email, message, subject } = await request.json();
 
-    if (!email || !message) {
+    if (!email || !message || !subject) {
       return new Response(JSON.stringify({ success: false, error: "Missing fields" }), {
         status: 400,
       });

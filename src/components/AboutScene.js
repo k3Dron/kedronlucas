@@ -50,7 +50,7 @@ const AboutScene = () => (
       <img
         src="/images/mainpfp.png"
         alt="Profile"
-        className="w-auto h-100 md:h-130 my-4"
+        className="w-auto h-90 md:h-130 my-4"
       />
     </div>
 
