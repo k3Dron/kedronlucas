@@ -89,54 +89,56 @@ const SLIDES = [
 export default function HoverSliderDemo() {
   return (
     <div className="h-full w-full flex flex-col items-center ">
-    <ScrambledText
-  className="scrambled-text-demo"
-  radius={100}
-  duration={1.2}
-  speed={0.2}
-  scrambleChars=".:"
->
-  Memories...
-</ScrambledText>
-    <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton ">These are my Shinobi Scrolls — snapshots of the chaos, creativity, 
-      and ramen-fueled nights behind each jutsu Ive learned! <br/>From shadowy sketches to full-blown design Rasengans, 
-      very frame holds a part of my journey. <br/>Believe it!</p>
-    <div className="h-4 md:h-10"/>
-    <HoverSlider className=" place-content-center 1tags text-white hidden lg:block">
-      <div className="flex flex-wrap items-center justify-evenly gap-6 md:gap-12">
-        <div className="flex flex-col space-y-2 md:space-y-4">
-          {SLIDES.map((slide, index) => (
-            <TextStaggerHover
-              key={slide.id}
-              index={index}
-              className="cursor-pointer text-base xl:text-4xl font-bold uppercase tracking-tighter"
-              text={slide.title}
-            />
-          ))}
-        </div>
-        <HoverSliderImageWrap>
-          {SLIDES.map((slide, index) => (
-            <div key={`img-${slide.id}`}>
-              <HoverSliderImage
+      <ScrambledText
+        className="scrambled-text-demo"
+        radius={100}
+        duration={1.2}
+        speed={0.2}
+        scrambleChars=".:"
+      >
+        Memories...
+      </ScrambledText>
+      <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton ">
+        These are my Shinobi Scrolls — snapshots of the chaos, creativity, 
+        and ramen-fueled nights behind each jutsu Ive learned! <br/>From shadowy sketches to full-blown design Rasengans, 
+        very frame holds a part of my journey. <br/>Believe it!
+      </p>      
+      <div className="h-4 md:h-10"/>
+      <HoverSlider className=" place-content-center 1tags text-white hidden lg:block">
+        <div className="flex flex-wrap items-center justify-evenly gap-6 md:gap-12">
+          <div className="flex flex-col space-y-2 md:space-y-4">
+            {SLIDES.map((slide, index) => (
+              <TextStaggerHover
+                key={slide.id}
                 index={index}
-                src={slide.image}
-                alt={slide.title}
-                className="w-40 h-28 xl:size-full xl:max-h-96 size-full max-h-96 object-cover"
-                loading="eager"
-                decoding="async"
+                className="cursor-pointer text-base xl:text-4xl font-bold uppercase tracking-tighter"
+                text={slide.title}
               />
-            </div>
-          ))}
-        </HoverSliderImageWrap>
-        <SlideDescription
-  descriptions={SLIDES.map((s) => s.description)}
-  dates={SLIDES.map((s) => s.date)}
-  linkedinLinks={SLIDES.map((s) => s.linkedin)}
-  className="text-sm xl:text-lg max-w-md lg:max-w-xl xl:max-w-2xl text-center mt-4"
-/>
-      </div>
-    </HoverSlider>
-    <div className="lg:hidden"><TiltGalleryLoop items={SLIDES}/></div>
+            ))}
+          </div>
+          <HoverSliderImageWrap>
+            {SLIDES.map((slide, index) => (
+              <div key={`img-${slide.id}`}>
+                <HoverSliderImage
+                  index={index}
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-40 h-28 xl:size-full xl:max-h-96 size-full max-h-96 object-cover"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </HoverSliderImageWrap>
+          <SlideDescription
+            descriptions={SLIDES.map((s) => s.description)}
+            dates={SLIDES.map((s) => s.date)}
+            linkedinLinks={SLIDES.map((s) => s.linkedin)}
+            className="text-sm xl:text-lg max-w-md lg:max-w-xl xl:max-w-2xl text-center mt-4"
+          />
+        </div>
+      </HoverSlider>
+      <div className="lg:hidden"><TiltGalleryLoop items={SLIDES}/></div>
     </div>
   );
 }

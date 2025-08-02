@@ -136,19 +136,17 @@ export const SlideDescription = forwardRef(
         {date && (
           <span className="bebas font-normal  mt-4 text-neutral-300 ">{date}</span>
         )}
-
-        <p className="font-sans font-normal text-xs xl:text-base mt-4 text-neutral-300 max-w-100">{description}</p>
-
         {linkedin && (
           <a
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline mt-2"
+            className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline hover:text-orange-600 transition-colors mt-2"
           >
-            <ExternalLink size={16} /> LinkedIn
+            <ExternalLink size={16} /> Read full story
           </a>
         )}
+        <p className="font-sans font-normal text-xs xl:text-base mt-4 text-neutral-300 max-w-100">{description}</p>
       </motion.div>
     );
   }

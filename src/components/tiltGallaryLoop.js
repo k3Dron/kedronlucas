@@ -160,7 +160,7 @@ export default function TiltGalleryLoop({ items = [] }) {
                                                 href={github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline"
+                                                className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline group-hover:text-orange-600 transition-colors"
                                             >
                                                 <GithubIcon size={16} /> GitHub
                                             </a>
@@ -170,7 +170,7 @@ export default function TiltGalleryLoop({ items = [] }) {
                                                 href={linkedin}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline"
+                                                className="flex items-center gap-1 ptags rounded-full text-xs font-mono hover:underline group-hover:text-orange-600 transition-colors"
                                             >
                                                 <LinkedinIcon size={16} /> LinkedIn
                                             </a>

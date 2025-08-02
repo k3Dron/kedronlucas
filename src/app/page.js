@@ -42,9 +42,7 @@ export default function Home() {
     </span>
   </div>
 )}
-
-
-      <div className="scroll-smooth">
+      <div className="scroll-smooth z-50">
         <section
           id="hero"
           className="pt-32 h-screen flex items-center justify-center text-white text-4xl font-bold "

@@ -95,7 +95,7 @@ export default function ProjectScene() {
         {
           image: 'https://images.unsplash.com/photo-1688733720228-4f7a18681c4f?q=80&w=2487&auto=format&fit=crop',
           name: 'Movie Recommendation Model',
-          description: 'This project is a movie recommendation system that uses Boltzmann Machines, with a special focus on Restricted Boltzmann Machines (RBMs) to capture complex patterns in user ratings to suggest movies based on user preferences.',
+          description: 'Movie recommendation system with a special focus on Restricted Boltzmann Machines (RBMs) to capture complex patterns in user ratings to suggest movies based on user preferences.',
           tech: ['AI', 'ML', 'python', 'numpy', 'pandas', 'pytorch'],
           linkedin: 'https://www.linkedin.com/posts/kedron-lucas_boltzmann-netflix-ai-activity-7241526284273475584-x5UD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAETdTr4Bbb0FNngGAWLvDxiWctGt6nQKXD4',
         },
@@ -146,6 +146,9 @@ export default function ProjectScene() {
     <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton">Every shinobi has their path, and these are mine. <br></br>
         From solo S-rank coding quests to crafting AI agents, each project here represents a step in my ninja journey. Every mission taught me a new jutsu.
         <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check em out—Dattebayo!.</p>
+        <p className=" text-xs flex items-center gap-2 text-gray-800">
+                 [ You can drag the cards right / left ]       
+              </p>
         <div className="h-4 md:h-10"/>
     <TiltGalleryLoop items={projectList} />
     </div>

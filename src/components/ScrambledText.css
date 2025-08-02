@@ -1,8 +1,7 @@
 .text-block {
-  margin: 5vw;
-  max-width: 1000px;
+  margin: 0vw;
   font-family: monospace;
-  color: #fff;
+  color: #ffffff;
 }
 
 .char {
@@ -11,5 +10,5 @@
 }
 
 .scramble-heading {
-  font-size: clamp(3rem, 18vw, 15rem);
+  font-size: clamp(3rem, 25vw, 20rem);
 }
