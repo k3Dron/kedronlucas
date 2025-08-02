@@ -1,6 +1,7 @@
 "use client"
 import  TiltGalleryLoop from '@/components/tiltGallaryLoop';
 import ScrollFloatHeader from './ScrollFloatHeader';
+import ScrambledText from './ScrambledText';
 
 export default function ProjectScene() {
 
@@ -133,13 +134,15 @@ export default function ProjectScene() {
 
     return (
     <div className="h-full w-full flex flex-col items-center">
-    <ScrollFloatHeader animationDuration={1}
-        ease="back.inOut(2)"
-        scrollStart="center bottom+=50%"
-        scrollEnd="bottom bottom-=40%"
-        stagger={0.03}
-      >
-        Missions Done </ScrollFloatHeader>
+    <ScrambledText
+  className="scrambled-text-demo"
+  radius={100}
+  duration={1.2}
+  speed={0.2}
+  scrambleChars=".:"
+>
+  Missions...
+</ScrambledText>
     <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton">Every shinobi has their path, and these are mine. <br></br>
         From solo S-rank coding quests to crafting AI agents, each project here represents a step in my ninja journey. Every mission taught me a new jutsu.
         <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check em out—Dattebayo!.</p>
@@ -148,3 +151,4 @@ export default function ProjectScene() {
     </div>
     )
 }
+
