@@ -9,6 +9,7 @@ import {
 } from "@/components/animated-slideshow";
 import  TiltGalleryLoop from '@/components/tiltGallaryLoop';
 import ScrambledText from './ScrambledText';
+import ScrollVelocity from "./ScrollVelocityComponent";
 
 
 
@@ -89,6 +90,14 @@ const SLIDES = [
 export default function HoverSliderDemo() {
   return (
     <div className="h-full w-full flex flex-col items-center ">
+      <div className="h-5"/>
+      <ScrollVelocity
+        texts={[
+          "Untold stories are some of the best stories.",
+        ]}
+        velocity={20}
+        className="custom-scroll-text"
+      />
       <ScrambledText
         className="scrambled-text-demo"
         radius={100}

@@ -733,6 +733,8 @@ my showcase*/
   resize: vertical;
   min-height: 120px;
   font-family: inherit;
+  font-size: 14px;
+  color: white;
 }
 
 .clock-group {

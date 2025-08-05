@@ -99,13 +99,13 @@ export default function ContactForm() {
               >
                 Say Something
               </button>
-              <button
+              {/* <button
                 className={`tab-button bebas ${tab === "ask-date" ? "active" : ""} ${tab === "ask-date" ? "date-tab" : ""}`}
                 onClick={() => setTab("ask-date")}
                 type="button"
               >
                 ask out on a date? 💕
-              </button>
+              </button> */}
             </div>
 
             <div className="social-links">

@@ -1,6 +1,6 @@
 "use client"
 import  TiltGalleryLoop from '@/components/tiltGallaryLoop';
-import ScrollFloatHeader from './ScrollFloatHeader';
+import ScrollVelocity from "./ScrollVelocityComponent";
 import ScrambledText from './ScrambledText';
 
 export default function ProjectScene() {
@@ -134,6 +134,14 @@ export default function ProjectScene() {
 
     return (
     <div className="h-full w-full flex flex-col items-center">
+      <div className="h-5"/>
+      <ScrollVelocity
+        texts={[
+          "We find the path by walking it, not by waiting for it to be shown.",
+        ]}
+        velocity={20}
+        className="custom-scroll-text"
+      />
     <ScrambledText
   className="scrambled-text-demo"
   radius={100}
@@ -146,9 +154,6 @@ export default function ProjectScene() {
     <p className="font-sans font-normal text-center text-sm md:text-base mt-4 text-neutral-300 pbutton">Every shinobi has their path, and these are mine. <br></br>
         From solo S-rank coding quests to crafting AI agents, each project here represents a step in my ninja journey. Every mission taught me a new jutsu.
         <br></br>Ready to explore my completed assignments straight from the Hidden Code Village? Check em out—Dattebayo!.</p>
-        <p className=" text-xs flex items-center gap-2 text-gray-800">
-                 [ You can drag the cards right / left ]       
-              </p>
         <div className="h-4 md:h-10"/>
     <TiltGalleryLoop items={projectList} />
     </div>
